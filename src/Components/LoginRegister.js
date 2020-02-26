@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Auth from '../Components/Auth';
 
-import style from '../style/form.css';
+import '../style/form.css';
 
 const LoginRegister = props => {
 	const [{ isVisibleRegister, isVisibleLogin }, toggleVisibility] = useState({
@@ -99,6 +99,7 @@ const LoginRegister = props => {
 		<div className="wholePage">
 			{isVisibleRegister ? Registerform : ''}
 			{isVisibleLogin ? Loginform : ''}
+			
 			<div className="button_container">
 				<button
 					className={isVisibleRegister ? 'button_select register active_button' : 'button_select register'}

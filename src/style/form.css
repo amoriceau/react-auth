@@ -108,10 +108,13 @@ button {
 
 .button_select {
     color: #cbcbcb;
-    margin: 5%;
+    margin: 3%;
     width: 60%;
-    font-size: 1.5em;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0em;
     height: 45%;
+    font-weight: 100;
     background: #B21D62;
     box-shadow: 20px 20px 60px #971953, -20px -20px 60px #cd2171;
     transition: all 500ms;
@@ -120,8 +123,9 @@ button {
 .active_button {
     transition: all 500ms;
     background: #B21D62;
+    font-size: 1.9em;
     box-shadow: inset 20px 20px 60px #971953, inset -20px -20px 60px #cd2171;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #B21D62, 0 0 30px #B21D62, 0 0 40px #B21D62, 0 0 55px #B21D62, 0 0 75px #B21D62;
+    text-shadow: 0 0 8px #fff, 0 0 25px #B21D62, 0 0 35px #B21D62, 0 0 45px #B21D62;
 }
 
 button:disabled{
