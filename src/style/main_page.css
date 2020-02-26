@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Scada&display=swap');
+
+.main_page {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    font-family: 'Montserrat';
+}
+
+h2 {
+    margin: 100px 0 25px 0;
+    font-size: 7em;
+    font-weight: 400;
+    transform: translate3d(-1000px, 0 , 0);
+    animation: fadeInLeft 1000ms ease-in-out forwards;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 100;
+    animation: fadeInLeft 1000ms ease-in-out 250ms forwards;
+    transform: translate3d(-1000px, 0 , 0);
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    
+}
+
+@keyframes fadeInLeft{
+    0%{
+        transform: translate3d(-1000px, 0 , 0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate3d(0, 0 , 0);
+        opacity: 1;
+    }
+}

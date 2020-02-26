@@ -1,0 +1,152 @@
+::selection {
+    background: black;
+    color: white;
+}
+
+.wholePage {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    background: #B21D62;
+    color: white;
+    overflow: hidden;
+}
+
+
+.form_container {
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    margin-right: -150px;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: white;
+    overflow: hidden;
+    box-shadow: -15px 0px 15px 0px rgba(0, 0, 0, 0.35);
+    animation: slideLeft 750ms ease-in-out forwards;
+}
+
+form {
+    transform: skewX(8deg);
+}
+
+form label {
+    font-weight: 500;
+}
+
+form input {
+    display: block;
+    padding: 8px;
+    margin: 5px 0;
+    background: #00000008;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 80%;
+    height: 20px;
+    transition: all 400ms;
+}
+
+form h2 {
+    margin: 0 0 45px 0;
+    font-size: 2rem;
+}
+
+form input:focus {
+    border-color: #B21D62;
+}
+
+form input:focus:valid {
+    color: #2ecc71;
+    border-color: #2ecc71;
+}
+
+form input:focus:invalid {
+    color: #e74c3c;
+    border-color: #e74c3c;
+}
+
+form button {
+    position: absolute;
+    width: 80%;
+    height: 45px;
+    margin: auto;
+    margin-left: 10px;
+    margin-top: 45px;
+    text-transform: uppercase;
+    background-color: #B21D62;
+    color: white;
+    box-shadow: 19px 19px 24px #cccccc, -19px -19px 24px #ffffff;
+}
+
+form button:hover {
+    box-shadow: inset 19px 19px 24px #8e174e, inset -19px -19px 24px #d62376;
+}
+
+.button_container {
+    height: 30vh;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 500ms;
+}
+
+button {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button_select {
+    color: #cbcbcb;
+    margin: 5%;
+    width: 60%;
+    font-size: 1.5em;
+    height: 45%;
+    background: #B21D62;
+    box-shadow: 20px 20px 60px #971953, -20px -20px 60px #cd2171;
+    transition: all 500ms;
+}
+
+.active_button {
+    transition: all 500ms;
+    background: #B21D62;
+    box-shadow: inset 20px 20px 60px #971953, inset -20px -20px 60px #cd2171;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #B21D62, 0 0 30px #B21D62, 0 0 40px #B21D62, 0 0 55px #B21D62, 0 0 75px #B21D62;
+}
+
+button:disabled{
+    background: #7f8c8d;
+    color:#34495e;
+}
+
+button:hover:disabled{
+    background: #7f8c8d;
+    color:#34495e;
+    box-shadow: none;
+}
+.login {}
+
+.register {}
+
+@keyframes slideLeft {
+    0% {
+        transform: translate3d(1000px, 0, 0) skewX(0deg);
+        opacity: 0;
+    }
+    95% {}
+    100% {
+        transform-origin: top right;
+        transform: translate3d(0, 0, 0) skewX(-8deg);
+        opacity: 1;
+    }
+}

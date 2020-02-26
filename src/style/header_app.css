@@ -1,0 +1,25 @@
+.top_header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: #B21D62;
+
+}
+
+.logout{
+    margin-right:80px ;
+    width: 100px;
+    font-size: large;
+    color: #e74c3c;
+    background: white;
+}
+
+img{
+    height: 48px;
+    margin: 30px;
+}
