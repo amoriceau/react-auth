@@ -20,15 +20,12 @@ function filterDB(mail) {
 			return user
 		}
 	})
-	console.log('====================================');
-	console.log(localUser);
-	console.log('====================================');
 	return localUser[0]
 }
 
 class Auth {
 	constructor() {
-		this.authenticated = true;
+		this.authenticated = false;
 	}
 	login(user, callback, errorFun) {
 		const new_user = filterDB(user.email)
@@ -50,7 +47,7 @@ class Auth {
 		return this.authenticated;
 	};
 	register(user,callback,errorFun){
-		return 1
+		return 1 //not implemented
 	}
 }
 
